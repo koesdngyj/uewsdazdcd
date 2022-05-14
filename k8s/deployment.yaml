@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: was
+  name: wdj
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: was
+      app: wdj
   template:
     metadata:
       labels:
-        app: was
+        app: wdj
     spec:
       containers:
-      - image: okteto.dev/was:latest
-        name: was
+      - image: okteto.dev/wdj:latest
+        name: wdj
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.canva.com"
         - name: Vless_UUID
-          value: "c58412f5-7761-4535-8e4c-14a8858e8767"
+          value: "01291052-cf87-43ca-8eda-6bb71c117a94"
         - name: Vless_Path
-          value: "/jjshhg"
+          value: "/hfththy"
         - name: Vmess_UUID
-          value: "c58412f5-7761-4535-8e4c-14a8858e8767"
+          value: "01291052-cf87-43ca-8eda-6bb71c117a94"
         - name: Vmess_Path
-          value: "/kloosjh"
+          value: "/sefrgt"
         - name: Share_Path
           value: "/share233"
